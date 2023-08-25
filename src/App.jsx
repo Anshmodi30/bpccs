@@ -11,8 +11,8 @@ import Syllabus from "./Components/Syllabus/Syllabus";
 import Ncc from "./Components/Ncc/Ncc";
 import Nss from "./Components/Nss/Nss";
 import Sports from "./Components/Sports/Sports";
-import Bca from "./Components/Bca/Bca";
-import Bba from "./Components/Bba/Bba";
+import Bca from "./Components/BCA/Bca";
+import Bba from "./Components/BBA/Bba";
 import PlacementPartner from "./Components/Placement/PlacementPartner";
 
 function App() {
