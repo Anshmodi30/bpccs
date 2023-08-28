@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="px-5 py-10">
+      <div className="px-5 pt-5 mb-3">
         <div className="flex flex-col items-start px-5 lg:px-0 lg:flex-row lg:justify-around lg:items-start gap-y-5 lg:gap-x-10">
           <div className="flex flex-col lg:gap-y-7">
             <h2 className="text-[#0096F1] text-[18px] lg:text-[25px] font-semibold  ">
@@ -29,18 +29,18 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="py-5 text-white bg-[#0096F1] flex flex-col lg:flex-row items-start justify-between px-10 lg:items-center lg:justify-between gap-y-3">
-        <p className="tracking-wider font-[500] text-[12px] lg:text-[16px]">
+      <div className="py-1 text-white bg-[#0096F1] flex flex-col lg:flex-row items-center justify-between px-10 lg:items-center lg:justify-between gap-y-2">
+        <p className="tracking-wider font-[500] text-[10px] lg:text-[16px]">
           2023 ©All rights Reserved by NPCCM
         </p>
         <div className="flex items-center justify-between gap-x-5">
-          <p className="tracking-wider font-[600] text-[10px] lg:text-[15px] cursor-pointer">
+          <p className="tracking-wider font-[600] text-[8px] lg:text-[15px] cursor-pointer">
             Terms and Conditions
           </p>
-          <p className="tracking-wider font-[600] text-[10px] lg:text-[15px] cursor-pointer">
+          <p className="tracking-wider font-[600] text-[8px] lg:text-[15px] cursor-pointer">
             Privacy Policy
           </p>
-          <p className="tracking-wider font-[600] text-[10px] lg:text-[15px] cursor-pointer">
+          <p className="tracking-wider font-[600] text-[8px] lg:text-[15px] cursor-pointer">
             Site Map
           </p>
         </div>

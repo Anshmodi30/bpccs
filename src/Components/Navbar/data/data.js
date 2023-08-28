@@ -19,16 +19,14 @@ export const navLinks = [
     name: "Faculties",
     path: "/faculties",
   },
-
   {
     name: "Career",
     path: "/career",
   },
-
-  {
-    name: "About KSV",
-    path: "/aboutksv",
-  },
+  // {
+  //   name: "About KSV",
+  //   path: "/aboutksv",
+  // },
   {
     name: "About SVKM",
     path: "/aboutsvkm",

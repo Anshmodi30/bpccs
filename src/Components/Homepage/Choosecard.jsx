@@ -51,8 +51,8 @@ const Choosecard = () => {
   ];
 
   return (
-    <div className="px-10 lg:px-20 py-5">
-      <div className="flex items-center justify-start">
+    <div className="px-10 lg:px-20 py-5 mb-4">
+      <div className="flex items-center justify-start mb-3">
         <h1 className="text-[#0096F1] text-[20px] lg:text-[32px] pl-5 font-bold leading-[46.34px] relative font-libre before:absolute before:bg-[#0096F1] before:w-1 before:h-12 before:top-0 before:left-0">
           Features
         </h1>
@@ -73,7 +73,7 @@ const Choosecard = () => {
           {WhyData.map((data, index) => {
             return (
               <SwiperSlide key={index} className="">
-                <div className="w-[290px] lg:w-[340px] max-h-[370px] min-h-[370px] md:max-h-[370px] md:min-h-[370px] bg-white rounded-[10px] shadow-[0_4px_16px_0px_rgba(190,190,190,0.25)] px-5 py-5">
+                <div className="ml-2 lg:ml-0 w-[280px] lg:w-[340px] max-h-[370px] min-h-[370px] md:max-h-[370px] md:min-h-[370px] bg-white rounded-[10px] shadow-[0_4px_16px_0px_rgba(190,190,190,0.25)] px-5 py-5">
                   <div className="p-5">
                     <img src={data.img} className="w-[25%]" alt="card image" />
                   </div>

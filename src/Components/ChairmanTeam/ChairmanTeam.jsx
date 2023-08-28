@@ -161,14 +161,72 @@ const ChairmanTeam = () => {
   ];
   return (
     <div>
-      <div className="lg:px-12   pt-10 px-5 ">
+      <div
+        className="lg:h-[155px] flex justify-center flex-col lg:pl-36 mb-5 pl-10"
+        style={{
+          backgroundImage: "url(/img/teamupimg.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <p className="text-white lg:text-[34px] font-[700] font-libre">
+          Learn With Us.
+        </p>
+        <p className="text-white lg:text-[34px] font-[700] font-libre">
+          Improve With Us.
+        </p>
+      </div>
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-x-20 lg:px-20 px-10 gap-y-5 mb-5">
+        <div className="lg:w-1/2">
+          <img src="/img/teamheader.png" alt="" className="w-full" />
+        </div>
+        <div className="flex flex-col items-center justify-center lg:w-1/2 gap-y-10">
+          <div>
+            <p className="text-[#0096F1] text-[18px] lg:text-[28px] font-bold tracking-[1px] font-libre">
+              Faculty and Staff Support Systems
+            </p>
+            <p className="text-justify text-[16px]">
+              At BPCCS, faculty and staff are committed to providing students
+              with the necessary support to succeed academically and
+              professional.
+            </p>
+          </div>
+          <div>
+            <p className="text-[#0096F1] text-[18px] lg:text-[28px] font-bold tracking-[1px] font-libre">
+              Overview of Faculty and Staff
+            </p>
+            <p className="text-justify text-[16px]">
+              BCA faculty members at BPCCS are highly experienced and
+              knowledgeable in their field. They have a passion for teaching and
+              are committed to providing students with a rich learning
+              experience. The staff at BPCCS are also available to assist
+              students with any administrative or technical issues they may
+              encounter.
+            </p>
+          </div>
+          <div>
+            <p className="text-[#0096F1] text-[18px] lg:text-[28px] font-bold tracking-[1px] font-libre">
+              Availability of One-on-One Assistance
+            </p>
+            <p className="text-justify text-[16px]">
+              BPCCS understands that every student has unique needs and
+              challenges. That’s why they offer one-on-one assistance to help
+              students overcome any obstacles they may face. Faculty and staff
+              are available to provide academic and career advice, as well as
+              technical support.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="px-10 lg:px-20 py-5">
         <h1 className="text-[#0096F1] text-[20px] lg:text-[32px] pl-5 font-bold leading-[46.34px] relative font-libre before:absolute before:bg-[#0096F1] before:w-1 before:h-12 before:top-0 before:left-0">
           Faculties
         </h1>
       </div>
 
-      <div className="flex justify-center items-center  mt-20 px-10 md:px-0 lg:px-10  ">
-        <div className="  flex flex-row flex-wrap justify-center items-center md:gap-x-10 lg:gap-x-4 gap-x-4 gap-y-20 text-center cursor-pointer">
+      <div className="flex justify-center items-center mt-8 lg:mt-24 px-10 md:px-0 lg:px-20 mb-10">
+        <div className="flex flex-row flex-wrap justify-center items-center md:gap-x-10 lg:gap-x-4 gap-y-10 lg:gap-y-28 text-center cursor-pointer">
           {techs.map(
             ({
               id,
@@ -187,13 +245,13 @@ const ChairmanTeam = () => {
               <div
                 key={id}
                 className={
-                  " hover:border-[2px] hover:border-[#FFA800] bg-[#F8F8F8]   shadow-[0px_4px_16px_0px_rgba(0,0,0,0.20)] rounded-[5px]  w-[100%] md:w-[40%] lg:w-[24%] h-fit py-5 pt-16  "
+                  "bg-[#F8F8F8] border-t-[5px] border-[#ffa800] shadow-[0px_4px_16px_0px_rgba(0,0,0,0.20)] group hover:shadow-transparent w-[100%] md:w-[40%] lg:w-[24%] h-fit py-5 pt-16 transition-all duration-500 ease-in-out"
                 }
               >
                 <img
                   src={src}
                   alt=""
-                  className="w-36 bg-transparent mx-auto -mt-28"
+                  className="w-20 lg:w-36 bg-transparent mx-auto lg:-mt-36 -mt-24 group-hover:border-[4px] rounded-full group-hover:border-[#ffa800] border-[4px] border-transparent transition-all duration-500 ease-in-out"
                 />
                 <div className="flex flex-col justify-center items-center">
                   <p className="mt-2 text-[#FFA800] text-justify text-xl not-italic font-inter font-semibold leading-[161.523%]">

@@ -5,13 +5,20 @@ import { navLinks } from "./data/data";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+  const handleDropDown = () => {
+    document.getElementById("showActivity").classList.remove("opacity-0");
+    document.getElementById("showActivity").classList.add("opacity-100");
+  };
+  const handleDropDown1 = () => {
+    document.getElementById("showCourses").classList.remove("opacity-0");
+    document.getElementById("showCourses").classList.add("opacity-100");
+  };
   return (
     <>
       {/*=======================================desktop======================== */}
 
       <div className="hidden lg:block">
         {/*===================================Navbar1================================ */}
-
         <div className="flex items-center justify-center">
           <h1 className="text-[18px] not-italic font-bold font-KaiseiHarunoUmi leading-normal text-[#000]">
             કર ભલા હોગા ભલા.
@@ -20,7 +27,7 @@ const Navbar = () => {
 
         {/*===================main hedear ==========*/}
 
-        <div className="flex flex-row justify-between items-center xl:px-11 lg:px-5">
+        <div className="flex flex-row justify-between items-center xl:px-11 lg:px-5 z-50 relative">
           <div className="flex flex-row items-center gap-x-10 lg:gap-x-5">
             <a href="/" class="flex flex-row items-center ">
               <img
@@ -68,13 +75,31 @@ const Navbar = () => {
                 <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
               </svg>
 
-              <div className="flex flex-col px-4">
+              <div className="flex flex-col px-4 dropdown relative cursor-pointer">
                 <h1 className="xl:text-[16px] lg:text-[14px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
                   Courses
                 </h1>
-                <h3 className="xl:text-[12px] lg:text-[10px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
+                <h3 className="xl:text-[12px] lg:text-[10px] not-italic font-medium leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
                   Know More
                 </h3>
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 top-10">
+                  <li class="">
+                    <a
+                      class="rounded-t bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      href="/bca"
+                    >
+                      BCA
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      class="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap rounded-b"
+                      href="/bba"
+                    >
+                      BBA
+                    </a>
+                  </li>
+                </ul>
               </div>
 
               <svg
@@ -132,13 +157,39 @@ const Navbar = () => {
                 <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
               </svg>
 
-              <div className="flex flex-col px-4">
+              <div className="flex flex-col px-4 dropdown relative cursor-pointer">
                 <h1 className="xl:text-[16px] lg:text-[14px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
                   Activities
                 </h1>
                 <h3 className="xl:text-[12px] lg:text-[10px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
                   Know More
                 </h3>
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 top-10">
+                  <li class="">
+                    <a
+                      class="rounded-t bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      href="/ncc"
+                    >
+                      NCC
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      class="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      href="/nss"
+                    >
+                      NSS
+                    </a>
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      href="/sports"
+                    >
+                      Sports
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -146,7 +197,7 @@ const Navbar = () => {
 
         {/*================================end Navbar1======================= */}
 
-        <nav className="pt-5">
+        <nav className="pt-5 z-40 relative">
           <div className="flex gap-x-6 bg-[#0096F1] px-10 items-center justify-around lg:py-2 xl:py-3">
             {navLinks.map((link, index) => {
               return (
@@ -162,9 +213,7 @@ const Navbar = () => {
                 </ul>
               );
             })}
-
             {/*=====================================search ==================== */}
-
             <div className="relative">
               <div class="absolute inset-y-0 right-5 flex items-center  pointer-events-none">
                 <svg
@@ -225,7 +274,7 @@ const Navbar = () => {
                     Sarva Vidyalaya Kelavani Mandal’s
                   </h4>
                   <h3 className="text-[7px] md:text-[12px] not-italic font-bold leading-normal font-[kaisei] text-[#0096F1]">
-                    Narsinhbhai Patel College of Computer Studies and Management
+                    Bholabhai Patel College of Computer Studies
                   </h3>
                   <h3 className="text-[5px] md:text-[10px] not-italic font-semibold font-inter leading-normal text-[#FFA800]">
                     A Constituent College of KSV{" "}
@@ -301,49 +350,113 @@ const Navbar = () => {
                 {/*====================Search end */}
 
                 <div className="flex flex-col items-start justify-start">
-                  <div className="flex flex-col pt-2">
-                    <h1 className="text-[16px] not-italic font-semibold font-inter leading-normal tracking-[0.24px] text-[#0096F1]">
-                      Who We Are?
-                    </h1>
-                    <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
-                      Administration
-                    </h3>
+                  <a href="/desk">
+                    <div className="flex flex-col pt-2">
+                      <h1 className="text-[16px] not-italic font-semibold font-inter leading-normal tracking-[0.24px] text-[#0096F1]">
+                        Who We Are?
+                      </h1>
+                      <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
+                        Administration
+                      </h3>
+                    </div>
+                  </a>
+
+                  <div className="relative">
+                    <div
+                      className="flex flex-col pt-2"
+                      onClick={handleDropDown1}
+                    >
+                      <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
+                        Courses
+                      </h1>
+                      <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
+                        Know More
+                      </h3>
+                    </div>
+                    <div id="showCourses" className="opacity-0">
+                      <ul class="absolute flex text-gray-700 pt-1 top-2 left-20">
+                        <li class="">
+                          <a
+                            class="rounded-l bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            href="/bba"
+                          >
+                            BBA
+                          </a>
+                        </li>
+                        <li class="">
+                          <a
+                            class="rounded-r bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            href="/bca"
+                          >
+                            BCA
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
-                  <div className="flex flex-col pt-2">
-                    <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
-                      Courses
-                    </h1>
-                    <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
-                      Know More
-                    </h3>
-                  </div>
+                  <a href="/syllabus">
+                    <div className="flex flex-col pt-2">
+                      <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
+                        Syllabus
+                      </h1>
+                      <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
+                        Curriculum
+                      </h3>
+                    </div>
+                  </a>
 
-                  <div className="flex flex-col pt-2">
-                    <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
-                      Syllabus
-                    </h1>
-                    <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
-                      Curriculum
-                    </h3>
-                  </div>
+                  <a href="/placementpartner">
+                    <div className="flex flex-col pt-2">
+                      <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
+                        Placements
+                      </h1>
+                      <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
+                        Know More
+                      </h3>
+                    </div>
+                  </a>
 
-                  <div className="flex flex-col pt-2">
-                    <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
-                      Placements
-                    </h1>
-                    <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
-                      Know More
-                    </h3>
-                  </div>
-
-                  <div className="flex flex-col pt-2">
-                    <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
-                      Activities
-                    </h1>
-                    <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
-                      Know More
-                    </h3>
+                  <div className="relative">
+                    <div
+                      className="flex flex-col pt-2"
+                      onClick={handleDropDown}
+                    >
+                      <h1 className="text-[16px] not-italic font-semibold  leading-normal font-inter tracking-[0.24px] text-[#0096F1]">
+                        Activities
+                      </h1>
+                      <h3 className="text-[12px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
+                        Know More
+                      </h3>
+                    </div>
+                    <div id="showActivity" className="opacity-0">
+                      <ul class="absolute flex text-gray-700 pt-1 top-2 left-20">
+                        <li class="">
+                          <a
+                            class="rounded-l bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            href="/ncc"
+                          >
+                            NCC
+                          </a>
+                        </li>
+                        <li class="">
+                          <a
+                            class="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            href="/nss"
+                          >
+                            NSS
+                          </a>
+                        </li>
+                        <li class="">
+                          <a
+                            class="rounded-r bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            href="/sports"
+                          >
+                            Sports
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
 

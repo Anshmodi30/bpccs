@@ -1,11 +1,6 @@
 import Home from "./Components/Homepage/Home";
 import Footer from "./Components/Footer/Footer";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Outlet,
-} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import Aboutus from "./Components/Aboutus/Aboutus";
 import Inquiry from "./Components/Inquiry/Inquiry";
@@ -23,12 +18,27 @@ import PlacementPartner from "./Components/Placement/PlacementPartner";
 function App() {
   return (
     <>
-      <Outlet />
-      <Navbar />
-      <div className="mt-5">
-        <Inquiry />
-      </div>
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/aboutSVKM" element={<Aboutus />} />
+          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/desk" element={<ChairmanDesk />} />
+          <Route path="/faculties" element={<ChairmanTeam />} />
+          <Route path="/syllabus" element={<Syllabus />} />
+          <Route path="/ncc" element={<Ncc />} />
+          <Route path="/nss" element={<Nss />} />
+          <Route path="/sports" element={<Sports />} />
+          <Route path="/bca" element={<Bca />} />
+          <Route path="/bba" element={<Bba />} />
+          <Route path="/placementpartner" element={<PlacementPartner />} />
+        </Routes>
+        <div className="mt-5">
+          <Inquiry />
+        </div>
+        <Footer />
+      </Router>
     </>
   );
 }

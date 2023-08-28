@@ -54,20 +54,20 @@ const PlacedStudent = () => {
   ];
   return (
     <div>
-      <div className="flex justify-center items-center  mt-20 px-10 md:px-0 lg:px-10  ">
-        <div className="flex flex-row flex-wrap justify-center items-center md:gap-x-10 lg:gap-x-4 gap-x-4 gap-y-28 text-center cursor-pointer">
+      <div className="flex justify-center items-center mt-5 px-10 md:px-0 lg:px-10 mb-10 lg:mt-20">
+        <div className="flex flex-row flex-wrap justify-center items-center md:gap-x-10 lg:gap-x-16 gap-x-4 gap-y-16 lg:gap-y-28 text-center cursor-pointer">
           {techs.map(
             ({ id, src, title, title2, Q1, Q2, Aoi1, Aoi2, Te1, Te2 }) => (
               <div
                 key={id}
                 className={
-                  " hover:border-[2px] hover:border-[#FFA800] bg-[#F8F8F8] border-[2px] border-transparent shadow-[0px_4px_16px_0px_rgba(0,0,0,0.20)] rounded-[5px] w-[100%] md:w-[40%] lg:w-[28%] h-fit py-5 pt-16  transition-all duration-500 px-5"
+                  " hover:border-[2px] hover:border-[#FFA800] bg-[#F8F8F8] border-[2px] lg:border-transparent border-[#ffa800] shadow-[0px_4px_16px_0px_rgba(0,0,0,0.20)] rounded-[5px] w-[100%] md:w-[40%] lg:w-[28%] h-fit py-5 pt-16  transition-all duration-500 px-5"
                 }
               >
                 <img
                   src={src}
                   alt=""
-                  className="w-36 bg-transparent mx-auto -mt-36"
+                  className="w-20 lg:w-36 bg-transparent mx-auto lg:-mt-36 -mt-24"
                 />
                 <div className="flex flex-col justify-center items-center">
                   <p className="mt-2 text-[#FFA800] text-justify text-[20px] not-italic font-inter font-semibold leading-[161.523%]">
@@ -78,29 +78,29 @@ const PlacedStudent = () => {
                   </p>
                 </div>
                 <div className="pl-4 pt-3">
-                  <div className="flex flex-row items-center">
+                  <div className="">
                     <p className="text-black font-inter text-justify text-[14px] not-italic font-bold leading-[161.523%]">
                       {Q1}
-                    </p>
-                    <p className="text-justify  text-[12px] text-[#0096F1] not-italic font-normal leading-[161.523%] font-inter px-1 ">
-                      {Q2}
+                      <span className="text-justify text-[12px] text-[#0096F1] not-italic font-normal leading-[161.523%] font-inter px-1 ">
+                        {Q2}
+                      </span>
                     </p>
                   </div>
-                  <div className="flex flex-row pt-2 items-center">
-                    <p className="text-black text-justify  text-[14px] not-italic font-bold leading-[161.523%] font-inter ">
+                  <div className="">
+                    <p className="text-black font-inter text-justify text-[14px] not-italic font-bold leading-[161.523%]">
                       {Aoi1}
-                    </p>
-                    <p className="  text-[12px] text-[#0096F1] text-justify  not-italic font-normal leading-[161.523%] font-inter px-1">
-                      {Aoi2}
+                      <span className="text-justify text-[12px] text-[#0096F1] not-italic font-normal leading-[161.523%] font-inter px-1 ">
+                        {Aoi2}
+                      </span>
                     </p>
                   </div>
-                  <div className="flex flex-row items-start py-2">
-                    <span className="text-black text-justify text-[14px] not-italic font-bold leading-[161.523%] font-inter">
-                      {Te1}:
-                    </span>
-                    <span className="text-black  text-justify text-[10px] not-italic font-normal leading-[161.523%] font-inter px-1">
-                      {Te2}
-                    </span>
+                  <div className="">
+                    <p className="text-black font-inter text-justify text-[14px] not-italic font-bold leading-[161.523%]">
+                      {Te1} :
+                      <span className="text-justify text-[12px] text-[#0096F1] not-italic font-normal leading-[161.523%] font-inter px-1 ">
+                        {Te2}
+                      </span>
+                    </p>
                   </div>
                 </div>
               </div>
