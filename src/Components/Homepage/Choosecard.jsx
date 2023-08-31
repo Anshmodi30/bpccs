@@ -51,7 +51,7 @@ const Choosecard = () => {
   ];
 
   return (
-    <div className="px-10 lg:px-20 py-5 mb-4">
+    <div className="px-10 lg:px-20 py-5 mb-4"  >
       <div className="flex items-center justify-start mb-3">
         <h1 className="text-[#0096F1] text-[20px] lg:text-[32px] pl-5 font-bold leading-[46.34px] relative font-libre before:absolute before:bg-[#0096F1] before:w-1 before:h-12 before:top-0 before:left-0">
           Features

@@ -5,7 +5,7 @@ export const navLinks = [
   },
   {
     name: "Notice Board",
-    path: "/about",
+    path: "/noticeboard",
   },
   {
     name: "Admission Inquiry",

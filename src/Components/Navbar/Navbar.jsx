@@ -257,28 +257,28 @@ const Navbar = () => {
       <div className="block lg:hidden">
         <nav className="">
           {/*=================Main header=== */}
-          <div className="flex flex-row gap-x-5 items-center justify-around py-2 bg-[#f0f0f0]">
-            <div className="flex flex-row items-center justify-around gap-x-5">
+          <div className="flex flex-row gap-x-3 items-center justify-around py-2 bg-[#f0f0f0]">
+            <div className="flex flex-row items-center justify-around gap-x-2">
               <div>
                 <a href="/" className=" ">
                   <img
                     src="./img/logo.svg"
-                    className="w-[50px] h-[50px] md:w-[70px] md:h-[70px]"
+                    className="w-[50px] h-[50px] md:w-[70px] md:h-[70px] px-1 "
                     alt="logo"
                   />
                 </a>
               </div>
               <div>
                 <div className="">
-                  <h4 className="text-[5px] md:text-[10px] not-italic font-semibold font-[inter] leading-normal text-[#000000]">
+                  <h4 className="text-[10px] md:text-[10px] not-italic font-semibold font-[inter] leading-normal text-[#000000]">
                     Sarva Vidyalaya Kelavani Mandal’s
                   </h4>
-                  <h3 className="text-[7px] md:text-[12px] not-italic font-bold leading-normal font-[kaisei] text-[#0096F1]">
+                  <h3 className="text-[11px] md:text-[12px] not-italic font-bold leading-normal font-[kaisei] text-[#0096F1]">
                     Bholabhai Patel College of Computer Studies
                   </h3>
-                  <h3 className="text-[5px] md:text-[10px] not-italic font-semibold font-inter leading-normal text-[#FFA800]">
+                  <h3 className="text-[9px] md:text-[10px] not-italic font-semibold font-inter leading-normal text-[#FFA800]">
                     A Constituent College of KSV{" "}
-                    <span className="text-[5px] md:text-[10px] not-italic font-semibold leading-normal text-[#000000]">
+                    <span className="text-[9px] md:text-[10px] not-italic font-semibold leading-normal text-[#000000]">
                       (NAAC Acredited with B+ Grade)
                     </span>
                   </h3>
