@@ -13,7 +13,7 @@ export const navLinks = [
   },
   {
     name: "Features",
-    path: "/blog",
+    path: "/#features",
   },
   {
     name: "Faculties",

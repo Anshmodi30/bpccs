@@ -7,9 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
 .arrowmoving {
   animation: move 1.8s infinite ease-in-out;
 }
+
 @keyframes move {
   0% {
     margin-top: 0;

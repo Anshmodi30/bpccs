@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "clg-bpccs"
-  }
+    "default": "bpccs0"
+  },
+  "targets": {},
+  "etags": {}
 }

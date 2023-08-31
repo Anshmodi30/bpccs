@@ -160,7 +160,7 @@ const Announcement = () => {
           <div className="bg-[#0096f1] text-white text-[17px] px-3 py-2">
             <h1>Upcoming Events</h1>
           </div>
-          <div className="my-5 lg:my-0 lg:mt-4">
+          <div className="my-5 lg:my-0 lg:mt-4" id="features">
             <Swiper
               slidesPerView={window.innerWidth > 640 ? 6 : 1}
               loop={true}
