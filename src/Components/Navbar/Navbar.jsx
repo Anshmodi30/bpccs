@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-between items-center xl:px-11 lg:px-5 z-50 relative">
           <div className="flex flex-row items-center gap-x-10 lg:gap-x-5">
-            <a href="/" class="flex flex-row items-center ">
+            <a href="/" className="flex flex-row items-center ">
               <img
                 src="/img/logo.svg"
                 className="lg:w-[60px] lg:h-[70px]"
@@ -72,7 +72,7 @@ const Navbar = () => {
                 fill="none"
                 className="ml-2 "
               >
-                <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+                <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
               </svg>
 
               <div className="flex flex-col px-4 dropdown relative cursor-pointer">
@@ -82,18 +82,18 @@ const Navbar = () => {
                 <h3 className="xl:text-[12px] lg:text-[10px] not-italic font-medium leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
                   Know More
                 </h3>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 top-10">
-                  <li class="">
+                <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 top-10">
+                  <li className="">
                     <a
-                      class="rounded-t bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      className="rounded-t bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
                       href="/bca"
                     >
                       BCA
                     </a>
                   </li>
-                  <li class="">
+                  <li className="">
                     <a
-                      class="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap rounded-b"
+                      className="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap rounded-b"
                       href="/bba"
                     >
                       BBA
@@ -110,7 +110,7 @@ const Navbar = () => {
                 fill="none"
                 className="ml-2 "
               >
-                <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+                <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
               </svg>
 
               <a href="/syllabus">
@@ -132,7 +132,7 @@ const Navbar = () => {
                 fill="none"
                 className="ml-2 "
               >
-                <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+                <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
               </svg>
 
               <a href="/placementpartner">
@@ -154,7 +154,7 @@ const Navbar = () => {
                 fill="none"
                 className="ml-2 "
               >
-                <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+                <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
               </svg>
 
               <div className="flex flex-col px-4 dropdown relative cursor-pointer">
@@ -164,26 +164,26 @@ const Navbar = () => {
                 <h3 className="xl:text-[12px] lg:text-[10px] not-italic font-medium  leading-normal font-inter tracking-[0.12px] text-[#FFA800]">
                   Know More
                 </h3>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 top-10">
-                  <li class="">
+                <ul className="dropdown-menu absolute hidden text-gray-700 pt-1 top-10">
+                  <li className="">
                     <a
-                      class="rounded-t bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      className="rounded-t bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
                       href="/ncc"
                     >
                       NCC
                     </a>
                   </li>
-                  <li class="">
+                  <li className="">
                     <a
-                      class="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      className="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
                       href="/nss"
                     >
                       NSS
                     </a>
                   </li>
-                  <li class="">
+                  <li className="">
                     <a
-                      class="rounded-b bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
+                      className="rounded-b bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-2 px-4 block whitespace-no-wrap"
                       href="/sports"
                     >
                       Sports
@@ -201,7 +201,7 @@ const Navbar = () => {
           <div className="flex gap-x-6 bg-[#0096F1] px-10 items-center justify-around lg:py-2 xl:py-3">
             {navLinks.map((link, index) => {
               return (
-                <ul>
+                <ul key={index}>
                   <a className="" href={link.path}>
                     <li
                       className="text-[18px] not-italic font-inter font-medium leading-normal text-[#FFFFFF]  "
@@ -215,7 +215,7 @@ const Navbar = () => {
             })}
             {/*=====================================search ==================== */}
             <div className="relative">
-              <div class="absolute inset-y-0 right-5 flex items-center  pointer-events-none">
+              <div className="absolute inset-y-0 right-5 flex items-center  pointer-events-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="17"
@@ -226,23 +226,23 @@ const Navbar = () => {
                   <path
                     d="M13.6349 9.75535C14.1383 8.29386 14.0778 6.70332 13.4647 5.2823C12.8515 3.86128 11.728 2.7075 10.3049 2.03756C8.88184 1.36762 7.25711 1.22758 5.73574 1.64373C4.21436 2.05989 2.90095 3.00362 2.04206 4.29777C1.18318 5.59191 0.837875 7.14748 1.07098 8.67245C1.30409 10.1974 2.09957 11.5869 3.3081 12.5801C4.51663 13.5733 6.0551 14.1019 7.63471 14.0667C9.21431 14.0315 10.7264 13.4348 11.8872 12.3888"
                     stroke="#999999"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M11.9459 12.4527L16 16.4088"
                     stroke="#999999"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
               <input
                 type="text"
                 id="search-navbar"
-                class="block w-[224px] h-[32px] p-2 pr-10 text-[15px] font-inter text-[#00000066]/40 not-italic font-medium  border border-[#999999] bg-[#FFF] "
+                className="block w-[224px] h-[32px] p-2 pr-10 text-[15px] font-inter text-[#00000066]/40 not-italic font-medium  border border-[#999999] bg-[#FFF] "
                 placeholder="Search Here"
               />
             </div>
@@ -315,7 +315,7 @@ const Navbar = () => {
               <div className="flex flex-col items-start justify-center">
                 {/*====================search=================== */}
                 <div className="relative  pt-2 pb-2">
-                  <div class="absolute inset-y-0 right-5 flex items-center  pointer-events-none">
+                  <div className="absolute inset-y-0 right-5 flex items-center  pointer-events-none">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="17"
@@ -326,23 +326,23 @@ const Navbar = () => {
                       <path
                         d="M13.6349 9.75535C14.1383 8.29386 14.0778 6.70332 13.4647 5.2823C12.8515 3.86128 11.728 2.7075 10.3049 2.03756C8.88184 1.36762 7.25711 1.22758 5.73574 1.64373C4.21436 2.05989 2.90095 3.00362 2.04206 4.29777C1.18318 5.59191 0.837875 7.14748 1.07098 8.67245C1.30409 10.1974 2.09957 11.5869 3.3081 12.5801C4.51663 13.5733 6.0551 14.1019 7.63471 14.0667C9.21431 14.0315 10.7264 13.4348 11.8872 12.3888"
                         stroke="#999999"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                       <path
                         d="M11.9459 12.4527L16 16.4088"
                         stroke="#999999"
-                        stroke-width="1.5"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </div>
                   <input
                     type="text"
                     id="search-navbar"
-                    class="block w-[224px] h-[32px] p-2 pl-10 text-[15px] font-inter text-[#00000066]/40 not-italic font-medium  border border-[#999999] bg-[#FFF] "
+                    className="block w-[224px] h-[32px] p-2 pl-10 text-[15px] font-inter text-[#00000066]/40 not-italic font-medium  border border-[#999999] bg-[#FFF] "
                     placeholder="Search Here"
                   />
                 </div>
@@ -374,18 +374,18 @@ const Navbar = () => {
                       </h3>
                     </div>
                     <div id="showCourses" className="opacity-0">
-                      <ul class="absolute flex text-gray-700 pt-1 top-2 left-20">
-                        <li class="">
+                      <ul className="absolute flex text-gray-700 pt-1 top-2 left-20">
+                        <li className="">
                           <a
-                            class="rounded-l bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            className="rounded-l bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
                             href="/bba"
                           >
                             BBA
                           </a>
                         </li>
-                        <li class="">
+                        <li className="">
                           <a
-                            class="rounded-r bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            className="rounded-r bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
                             href="/bca"
                           >
                             BCA
@@ -430,26 +430,26 @@ const Navbar = () => {
                       </h3>
                     </div>
                     <div id="showActivity" className="opacity-0">
-                      <ul class="absolute flex text-gray-700 pt-1 top-2 left-20">
-                        <li class="">
+                      <ul className="absolute flex text-gray-700 pt-1 top-2 left-20">
+                        <li className="">
                           <a
-                            class="rounded-l bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            className="rounded-l bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
                             href="/ncc"
                           >
                             NCC
                           </a>
                         </li>
-                        <li class="">
+                        <li className="">
                           <a
-                            class="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            className="bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
                             href="/nss"
                           >
                             NSS
                           </a>
                         </li>
-                        <li class="">
+                        <li className="">
                           <a
-                            class="rounded-r bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
+                            className="rounded-r bg-[#ffa800] hover:bg-[#ffa800]/80 hover:backdrop-blur-md py-1 px-4 block whitespace-no-wrap"
                             href="/sports"
                           >
                             Sports
@@ -464,7 +464,7 @@ const Navbar = () => {
 
                 {navLinks.map((link, index) => {
                   return (
-                    <ul>
+                    <ul key={index}>
                       <a className=" " href={link.path}>
                         <li
                           className=" py-5 text-justify text-[16px] not-italic font-inter font-medium leading-normal text-black  "

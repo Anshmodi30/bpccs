@@ -161,7 +161,7 @@ const Inquiry = () => {
             </button>
             <button
               type="submit"
-              class="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
+              className="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
             >
               Submit
             </button>
@@ -294,7 +294,7 @@ const Inquiry = () => {
             </button>
             <button
               type="submit"
-              class="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
+              className="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
             >
               Submit
             </button>

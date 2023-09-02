@@ -18,6 +18,58 @@ const Noticeboard = () => {
       date: "1.08.2023",
       title: "Verification of Documents of 1st Semester",
     },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
+    {
+      date: "1.08.2023",
+      title: "Verification of Documents of 1st Semester",
+    },
   ];
   return (
     <div className="px-10 lg:px-20 py-5 mb-4">
@@ -27,34 +79,40 @@ const Noticeboard = () => {
         </h1>
       </div>
       <div className=" flex flex-col md:flex-row lg:p-5 gap-5 py-5">
-        <div className="overflow-x-auto md:w-[75%]">
-          <table class="table-auto w-full">
-            <thead class="text-xs font-semibold uppercase text-white bg-[#0096F1]">
-              <tr>
-                <th class="p-5 whitespace-nowrap">
-                  <div class="font-semibold text-left">Date</div>
+        <div className="w-full max-h-[450px] h-fit overflow-y-scroll">
+          <table className="table-auto border-spacing-0 border-collapse w-full border-0">
+            <thead id="table_fixed">
+              <tr className="text-xs font-semibold uppercase text-white bg-[#0096F1] px-3 sticky top-0 z-20 max-h-[70px] h-[70px]">
+                <th className="p-5 whitespace-nowrap">
+                  <p className="font-semibold text-left">Date</p>
                 </th>
-                <th class="p-5 whitespace-nowrap">
-                  <div class="font-semibold text-left">Occasion</div>
+                <th className="p-5 whitespace-nowrap">
+                  <p className="font-semibold text-left">Occasion</p>
                 </th>
-                <th class="text-center p-5 whitespace-nowrap">
-                  <div class="font-semibold">Preview</div>
+                <th className="text-center p-5 whitespace-nowrap">
+                  <p className="font-semibold">Preview</p>
                 </th>
               </tr>
             </thead>
-            <tbody class="text-sm divide-y divide-gray-100 bg-[#F5F5F5]">
+            <tbody id="contain">
               {TableData.map((item, index) => (
-                <tr key={index}>
-                  <td class="p-5 whitespace-nowrap">
-                    <div class="">
-                      <div class="font-medium text-[#0096F1]">{item.date}</div>
+                <tr
+                  id="table_scroll"
+                  className="text-sm bg-[#F5F5F5] h-[72px] rounded-lg py-3 px-3 transition-all duration-300"
+                  key={index}
+                >
+                  <td className="p-5 whitespace-nowrap">
+                    <div className="">
+                      <div className="font-medium text-[#0096F1]">
+                        {item.date}
+                      </div>
                     </div>
                   </td>
-                  <td class="p-5 whitespace-nowrap">
-                    <div class="text-left">{item.title}</div>
+                  <td className="p-5 whitespace-nowrap">
+                    <div className="text-left">{item.title}</div>
                   </td>
-                  <td class="p-5 whitespace-nowrap">
-                    <div class="font-medium text-[#ffa800] bg-[#ffa800]/20 cursor-pointer p-2 rounded-lg text-center hover:bg-[#ffa800] hover:text-[#fff] transition-all duration-300 ">
+                  <td className="p-5 whitespace-nowrap">
+                    <div className="font-medium text-[#ffa800] bg-[#ffa800]/20 cursor-pointer p-2 rounded-lg text-center hover:bg-[#ffa800] hover:text-[#fff] transition-all duration-300 ">
                       View More
                     </div>
                   </td>
@@ -63,9 +121,8 @@ const Noticeboard = () => {
             </tbody>
           </table>
         </div>
-
         <div className="">
-          <div className=" lg:w-72 md:w-48 w-72 rounded-lg shadow divide-y divide-gray-200  ">
+          <div className=" lg:w-72 md:w-48 w-72 rounded-lg shadow divide-y divide-gray-200">
             <p className="bg-gray-100 font-inter p-2 md:p-3 px-[1.1rem] md:px-4 cursor-pointer text-md text-gray-700 md:whitespace-nowrap">
               Governing Body
             </p>

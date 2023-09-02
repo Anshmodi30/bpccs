@@ -10,6 +10,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .arrowmoving {
   animation: move 1.8s infinite ease-in-out;
 }
@@ -24,6 +25,10 @@ html {
   100% {
     margin-top: 0;
   }
+}
+
+tbody {
+  max-height: 100px;
 }
 
 .react-calendar {

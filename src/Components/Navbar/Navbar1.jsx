@@ -47,7 +47,7 @@ const Navbar1 = () => {
               fill="none"
               className="ml-2 "
             >
-              <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+              <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
             </svg>
 
             <div className="flex flex-col px-4">
@@ -66,7 +66,7 @@ const Navbar1 = () => {
               fill="none"
               className="ml-2 "
             >
-              <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+              <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
             </svg>
 
             <div className="flex flex-col px-4">
@@ -85,7 +85,7 @@ const Navbar1 = () => {
               fill="none"
               className="ml-2 "
             >
-              <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+              <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
             </svg>
 
             <div className="flex flex-col px-4">
@@ -104,7 +104,7 @@ const Navbar1 = () => {
               fill="none"
               className="ml-2 "
             >
-              <path d="M1 0.75V50.75" stroke="black" stroke-opacity="0.4" />
+              <path d="M1 0.75V50.75" stroke="black" strokeOpacity="0.4" />
             </svg>
 
             <div className="flex flex-col px-4">
