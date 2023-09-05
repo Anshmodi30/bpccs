@@ -35,7 +35,7 @@ const Inquiry = () => {
     <>
       {/*==================================================desktop view ===================== */}
 
-      <div className="hidden lg:block px-10 lg:px-20 ">
+      <div className="hidden lg:block px-10 lg:px-20">
         <div className="flex items-center justify-start">
           <h1 className="text-[#0096F1] text-[20px] lg:text-[32px] pl-5 font-bold leading-[46.34px] relative font-libre before:absolute before:bg-[#0096F1] before:w-1 before:h-12 before:top-0 before:left-0">
             Inquiry
@@ -161,7 +161,7 @@ const Inquiry = () => {
             </button>
             <button
               type="submit"
-              class="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
+              className="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
             >
               Submit
             </button>
@@ -294,7 +294,7 @@ const Inquiry = () => {
             </button>
             <button
               type="submit"
-              class="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
+              className="text-[16px] font-Poppins not-italic font-semibold leading-[93.833%] rounded-[4px] border border-[#0096F1] text-[#FFF] bg-[#0096F1] px-8 py-2.5"
             >
               Submit
             </button>

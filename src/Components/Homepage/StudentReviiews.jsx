@@ -75,20 +75,20 @@ const StudentReviiews = () => {
             {WhyData.map((data, index) => {
               return (
                 <SwiperSlide>
-                  <div class="flex flex-row items-center     w-[320px] md:w-[360px] xl:w-[400px] max-h-[224px] min-h-[224px] md:max-h-[224px] md:min-h-[224px] bg-white  border border-grey">
+                  <div className="flex flex-row items-center     w-[320px] md:w-[360px] xl:w-[400px] max-h-[224px] min-h-[224px] md:max-h-[224px] md:min-h-[224px] bg-white  border border-grey">
                     <img
-                      class="object-cover  px-2 w-[170px]   h-[170px] md:w-[200px] md:h-[190px] "
+                      className="object-cover  px-2 w-[170px]   h-[170px] md:w-[200px] md:h-[190px] "
                       src={data.img}
                       alt=""
                     />
-                    <div class="flex flex-col justify-between p-4 leading-normal ">
-                      <h5 class="mb-2 text-[#0096F1] font-inter text-[18px] md:text-[20px] font-semibold leading-[29.05px] ">
+                    <div className="flex flex-col justify-between p-4 leading-normal ">
+                      <h5 className="mb-2 text-[#0096F1] font-inter text-[18px] md:text-[20px] font-semibold leading-[29.05px] ">
                         {data.title}
                       </h5>
                       <h5 className="mb-2 text-[#000] text-[11px] md:text-[11] font-inter font-medium leading-[14.247px]">
                         {data.deg}
                       </h5>
-                      <p class=" text-[11px] md:text-[11px] text-[#6B6B6B] font-medium font-inter leading-[14.25px] text-justify  ">
+                      <p className=" text-[11px] md:text-[11px] text-[#6B6B6B] font-medium font-inter leading-[14.25px] text-justify  ">
                         {data.description}
                       </p>
                     </div>
