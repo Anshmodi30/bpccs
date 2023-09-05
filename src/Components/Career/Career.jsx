@@ -23,7 +23,7 @@ const Career = () => {
                     <div className='flex space-x-10 sm:flex sm:space-x-40 md:flex md:space-x-60 lg:flex lg:space-x-80 xl:flex xl:justify-between'>
                         <h1 className='text-[#0096F1] text-[0.8rem]  font-bold font-inter xl:text-[1rem] xl:text-bold'>Mechanical Engineer</h1>
                         
-                            <h5 className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[65rem] xl:right-10">Apply Now</h5>
+                            <h5 className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[50rem] xl:right-0">Apply Now</h5>
                         
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.4208 19.393L8.59173 14.9785M8.57919 11.393L17.4166 6.97431M25 21.1826C25 23.3918 23.2091 25.1826 21 25.1826C18.7909 25.1826 17 23.3918 17 21.1826C17 18.9735 18.7909 17.1826 21 17.1826C23.2091 17.1826 25 18.9735 25 21.1826ZM25 5.18262C25 7.39176 23.2091 9.18262 21 9.18262C18.7909 9.18262 17 7.39176 17 5.18262C17 2.97348 18.7909 1.18262 21 1.18262C23.2091 1.18262 25 2.97348 25 5.18262ZM9 13.1826C9 15.3918 7.20914 17.1826 5 17.1826C2.79086 17.1826 1 15.3918 1 13.1826C1 10.9735 2.79086 9.18262 5 9.18262C7.20914 9.18262 9 10.9735 9 13.1826Z" stroke="#0096F1" stroke-width="1.5" />
@@ -55,7 +55,7 @@ const Career = () => {
                     <div className='flex space-x-10 sm:flex sm:space-x-40 md:flex md:space-x-60 lg:flex lg:space-x-80 xl:flex xl:justify-between'>
                         <h1 className='text-[#0096F1] text-[0.8rem]  font-bold font-inter xl:text-[1rem] xl:text-bold'>Manufacturing Project Engineer</h1>
                         
-                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[65rem] xl:right-10">Apply Now</h5>
+                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[50rem] xl:right-0">Apply Now</h5>
                         
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.4208 19.393L8.59173 14.9785M8.57919 11.393L17.4166 6.97431M25 21.1826C25 23.3918 23.2091 25.1826 21 25.1826C18.7909 25.1826 17 23.3918 17 21.1826C17 18.9735 18.7909 17.1826 21 17.1826C23.2091 17.1826 25 18.9735 25 21.1826ZM25 5.18262C25 7.39176 23.2091 9.18262 21 9.18262C18.7909 9.18262 17 7.39176 17 5.18262C17 2.97348 18.7909 1.18262 21 1.18262C23.2091 1.18262 25 2.97348 25 5.18262ZM9 13.1826C9 15.3918 7.20914 17.1826 5 17.1826C2.79086 17.1826 1 15.3918 1 13.1826C1 10.9735 2.79086 9.18262 5 9.18262C7.20914 9.18262 9 10.9735 9 13.1826Z" stroke="#0096F1" stroke-width="1.5" />
@@ -88,7 +88,7 @@ const Career = () => {
                     <div className='flex space-x-10 sm:flex sm:space-x-40 md:flex md:space-x-60 lg:flex lg:space-x-80 xl:flex xl:justify-between'>
                         <h1 className='text-[#0096F1] text-[0.8rem]  font-bold font-inter xl:text-[1rem] xl:text-bold'>Design & Installation Engineer</h1>
                         
-                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[65rem] xl:right-10">Apply Now</h5>
+                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[50rem] xl:right-0">Apply Now</h5>
                         
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.4208 19.393L8.59173 14.9785M8.57919 11.393L17.4166 6.97431M25 21.1826C25 23.3918 23.2091 25.1826 21 25.1826C18.7909 25.1826 17 23.3918 17 21.1826C17 18.9735 18.7909 17.1826 21 17.1826C23.2091 17.1826 25 18.9735 25 21.1826ZM25 5.18262C25 7.39176 23.2091 9.18262 21 9.18262C18.7909 9.18262 17 7.39176 17 5.18262C17 2.97348 18.7909 1.18262 21 1.18262C23.2091 1.18262 25 2.97348 25 5.18262ZM9 13.1826C9 15.3918 7.20914 17.1826 5 17.1826C2.79086 17.1826 1 15.3918 1 13.1826C1 10.9735 2.79086 9.18262 5 9.18262C7.20914 9.18262 9 10.9735 9 13.1826Z" stroke="#0096F1" stroke-width="1.5" />
@@ -121,7 +121,7 @@ const Career = () => {
                     <div className='flex space-x-10 sm:flex sm:space-x-40 md:flex md:space-x-60 lg:flex lg:space-x-80 xl:flex xl:justify-between'>
                         <h1 className='text-[#0096F1] text-[0.8rem]  font-bold font-inter xl:text-[1rem] xl:text-bold'>Design & Installation Engineer</h1>
                         
-                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[65rem] xl:right-10">Apply Now</h5>
+                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[50rem] xl:right-0">Apply Now</h5>
                         
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.4208 19.393L8.59173 14.9785M8.57919 11.393L17.4166 6.97431M25 21.1826C25 23.3918 23.2091 25.1826 21 25.1826C18.7909 25.1826 17 23.3918 17 21.1826C17 18.9735 18.7909 17.1826 21 17.1826C23.2091 17.1826 25 18.9735 25 21.1826ZM25 5.18262C25 7.39176 23.2091 9.18262 21 9.18262C18.7909 9.18262 17 7.39176 17 5.18262C17 2.97348 18.7909 1.18262 21 1.18262C23.2091 1.18262 25 2.97348 25 5.18262ZM9 13.1826C9 15.3918 7.20914 17.1826 5 17.1826C2.79086 17.1826 1 15.3918 1 13.1826C1 10.9735 2.79086 9.18262 5 9.18262C7.20914 9.18262 9 10.9735 9 13.1826Z" stroke="#0096F1" stroke-width="1.5" />
@@ -154,7 +154,7 @@ const Career = () => {
                     <div className='flex space-x-10 sm:flex sm:space-x-40 md:flex md:space-x-60 lg:flex lg:space-x-80 xl:flex xl:justify-between'>
                         <h1 className='text-[#0096F1] text-[0.8rem]  font-bold font-inter xl:text-[1rem] xl:text-bold'>Industrial Sewing Machine Operator</h1>
                         
-                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[65rem] xl:right-10">Apply Now</h5>
+                            <h5  className="mb-2 text-[0.8rem] text-[#0096F1]  font-bold font-inter tracking-tight sm:absolute sm:inset-x[30rem] sm:right-50 xl:absolute xl:inset-x-[50rem] xl:right-0">Apply Now</h5>
                         
                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M17.4208 19.393L8.59173 14.9785M8.57919 11.393L17.4166 6.97431M25 21.1826C25 23.3918 23.2091 25.1826 21 25.1826C18.7909 25.1826 17 23.3918 17 21.1826C17 18.9735 18.7909 17.1826 21 17.1826C23.2091 17.1826 25 18.9735 25 21.1826ZM25 5.18262C25 7.39176 23.2091 9.18262 21 9.18262C18.7909 9.18262 17 7.39176 17 5.18262C17 2.97348 18.7909 1.18262 21 1.18262C23.2091 1.18262 25 2.97348 25 5.18262ZM9 13.1826C9 15.3918 7.20914 17.1826 5 17.1826C2.79086 17.1826 1 15.3918 1 13.1826C1 10.9735 2.79086 9.18262 5 9.18262C7.20914 9.18262 9 10.9735 9 13.1826Z" stroke="#0096F1" stroke-width="1.5" />
