@@ -7,6 +7,7 @@ import Inquiry from "./Components/Inquiry/Inquiry";
 import Contactus from "./Components/Contactus/Contactus";
 import ChairmanDesk from "./Components/ChairmanDesk/ChairmanDesk";
 import ChairmanTeam from "./Components/ChairmanTeam/ChairmanTeam";
+import Career from "./Components/Career/Career";
 import Syllabus from "./Components/Syllabus/Syllabus";
 import Noticeboard from "./Components/Notice/Noticeboard";
 import Ncc from "./Components/Ncc/Ncc";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/aboutSVKM" element={<Aboutus />} />
           <Route path="/contactus" element={<Contactus />} />
           <Route path="/desk" element={<ChairmanDesk />} />
+          <Route path="/career" element={<Career />} />
           <Route path="/faculties" element={<ChairmanTeam />} />
           <Route path="/syllabus" element={<Syllabus />} />
           <Route path="/ncc" element={<Ncc />} />
